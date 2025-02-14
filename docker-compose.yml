@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  llm_installer:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    restart: always
